@@ -90,6 +90,10 @@ nav
   background: url('../img/bg/background_subheader.png') center (center / cover) no-repeat
   min-height: 382px
 
+
+.subheader_media
+  @media screen and (max-width: 768px) {display: none}
+
 .subheader
   &_promo
     font-weight: 500;
@@ -115,15 +119,106 @@ nav
 ._subheader
   margin-top: 126px
 
+.block_section
+  margin-top: 171px
+
 .block
-  border-right: 2px solid black
-  padding-right: 28px
   display: flex
+  border-right: 2px solid #EEEFF2
+  height: 200px
   &_subtitle
-    font-weight: bold;
-    font-size: 25px;
+    transform: translate(100px, 70px)
+    font-weight: bold
+    font-size: 25px
   &_text
-    font-weight: normal;
+    transform: translate(100px, 70px)
+    font-weight: normal
     font-size: 20px
+    padding-right: 91px
   &_round
-    transform: translate(-10px, 6px)
+   transform: translate(90px, 80px)
+   display: flex
+   justify-content: center
+   align-items: center
+   align-items: center
+   margin-right: 26px
+   width: 55px
+   height: 55px
+   background-color: #FFECEC
+   border-radius: 100%
+
+.require
+  padding: 68px 0 84px 0 
+  &_block
+    margin: 33px 0
+    &_nbm
+      margin-bottom: 0px
+  &_title
+    padding-right: 80px
+    margin-bottom: 20px
+    font-size: 35px
+    font-weight: 500
+    color: #000
+  &_list
+    list-style-type: none
+    margin-top: 22px
+    margin-bottom: 20px
+    li
+      margin-bottom: 20px
+      display: inline-block
+      font-size: 17px
+      font-weight: 300
+      color: #222222
+      margin-bottom: 10px
+      &:before
+        content: ''
+        display: inline-block
+        vertical-aling: middle
+        transform: translate(-8px, 4px)
+        width: 21px
+        height: 20px
+        background: url('../icons/vector_rec.svg') center (center / cover) no-repeat
+
+.section_require
+    margin-top: 95px
+
+.choose_section
+  background: #CECECE
+
+.choose_title
+  margin-top: 80px
+  font-weight: 500
+  font-size: 35px
+  line-height: 50px
+
+.subtitle_title
+  margin-top: 20px
+  font-size: 16px
+  line-height: 30px
+
+.choose_bg
+   text-align: center
+
+.free_block
+  width: 330px
+  height: 760px
+  background-color: #fff
+  border: 1px solid $btn-hover-color
+  border-radius: 5px
+.require_free
+  text-align: center
+  li
+    margin-bottom: 20px
+    display: inline-block
+    font-size: 17px
+    font-weight: 300
+    color: #222222
+    margin-bottom: 10px
+    &:before
+      content: ''
+      display: inline-block
+      vertical-aling: middle
+      transform: translate(-8px, 4px)
+      width: 21px
+      height: 20px
+      background: url('../icons/_ok.svg') center (center / cover) no-repeat
