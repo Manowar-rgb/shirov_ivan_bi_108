@@ -6,12 +6,10 @@ $btn-hover-color: #F53838
     background-color: $btn-hover-color
     color: #fff
 
-
 body
   font-family: 'Rubik', sans-serif;
 
 nav
-  position: fixed
   width: 100%
   height: 50px
   background-color: #fff
@@ -73,8 +71,7 @@ nav
     margin-right: 30px
     font-weight: 500
     font-size: 16px
-    line-height: 19px
-    width: 53px
+
 
 .sing_in_button
   width: 150px
@@ -88,3 +85,45 @@ nav
   text-transform: uppercase
   transition: all 0.5s ease-out;
   +btn_hover
+
+.subheader_img
+  background: url('../img/bg/background_subheader.png') center (center / cover) no-repeat
+  min-height: 382px
+
+.subheader
+  &_promo
+    font-weight: 500;
+    font-size: 50px;
+  &_subpromo
+    font-size: 16px;
+    line-height: 30px;
+  &_btn
+    margin-top: 50px
+    box-shadow: 10px 10px 20px rgba(245, 56, 56, 0.35)
+    width: 150px
+    height: 45px
+    border-radius: 5px
+    border: 1px solid #F53855
+    background-color: #fff
+    color: #F53855
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    transition: all 0.5s ease-out;
+    +btn_hover
+
+._subheader
+  margin-top: 126px
+
+.block
+  border-right: 2px solid black
+  padding-right: 28px
+  display: flex
+  &_subtitle
+    font-weight: bold;
+    font-size: 25px;
+  &_text
+    font-weight: normal;
+    font-size: 20px
+  &_round
+    transform: translate(-10px, 6px)
